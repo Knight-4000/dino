@@ -9,7 +9,7 @@ export default function TurboCityCard() {
         <div className="block max-w-sm rounded-lg bg-white">
             <a href="#">
                 <img className="rounded-t-lg"
-                    src="https://firebasestorage.googleapis.com/v0/b/rescue-a2794.appspot.com/o/jwI3HD74OzYPqgxsXI3Q3tY9xhA2-kitty-2.jpg-d05aa6a5-d970-4a53-819a-2ebd395cd2bf?alt=media&token=5f0a4710-1820-4532-889c-3c401b680fbf"
+                    src="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/TurboCity.png?alt=media&token=141625a0-8927-4437-91d1-02993759d34d"
                     alt="" />
             </a>
             <div className="p-6">
