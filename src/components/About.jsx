@@ -9,6 +9,7 @@ export default function About() {
             <ul className='py-4'>
                 <li className='py-1 list-disc'>Ruby on Rails</li>
                 <li className='py-1 list-disc'>React JS</li>
+                <li className='py-1 list-disc'>Redux</li>
                 <li className='py-1 list-disc'>Bootstrap </li>
                 <li className='py-1 list-disc'>Tailwind </li>
                 <li className='py-1 list-disc'>HTML </li>
