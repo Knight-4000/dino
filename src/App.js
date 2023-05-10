@@ -34,6 +34,8 @@ function App() {
       y: 0,
     },
   }
+  
+  require('dotenv').config()
   return (
     <div className="App">
       <Nav />
