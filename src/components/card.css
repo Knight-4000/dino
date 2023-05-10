@@ -1,0 +1,18 @@
+.outer{
+    min-height:100%;
+    display:flex;
+}
+
+.inner{margin: auto;}
+
+.card-icons{ font-size: 36px; }
+
+.rails-icon{color: #cc0000;}
+
+.react-icon{color: #61DBFB;}
+
+.bootstrap-icon{color: #7A43B6;}
+
+.tailwind-icon{color: rgb(37, 150, 190)}
+
+ul.li { list-style-type: circle; }

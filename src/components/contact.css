@@ -1,0 +1,18 @@
+textarea { resize: none; }
+
+.contact-header{
+    font-family: Tilt Neon;
+    font-size: 2.075rem;
+    color: #0002FF;
+}
+
+.contact-button{
+    background: #0002FF;
+    font-family: Tilt Neon;
+    border-radius: 25px;
+}
+
+:focus{
+    color: #0002FF;
+    transition-duration: 0.7s;
+}

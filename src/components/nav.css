@@ -1,0 +1,16 @@
+nav{
+    background-color: transparent;
+    z-index: 9999;
+}
+
+.outer{
+    min-height:100%;
+    display:flex;
+}
+
+.inner{margin: auto;}
+
+.icon{
+    color: #fff;
+    font-size: 20px;
+}
