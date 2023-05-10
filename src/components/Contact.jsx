@@ -6,10 +6,10 @@ import './contact.css';
 
 export default function Contact() {  
 
-  const SERVICE_ID = ""
-  const TEMPLATE_ID = ""
-  const PUBLIC_KEY = ""
-  const PRIVATE_KEY = ""
+  const SERVICE_ID = "process.env.SERVICE_ID"
+  const TEMPLATE_ID = "process.env.TEMPLATE_ID"
+  const PUBLIC_KEY = "process.env.PUBLIC_ID"
+  const PRIVATE_KEY = "process.env.PRIVATE_ID"
   
     const handleOnSubmit = async (e) => {
       e.preventDefault()
