@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Mynerve:&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Tilt+Neon:&subset=latin,latin-ext');
+
+body{ background-image: linear-gradient(to bottom, #0000A0 0%, #0002FF 30%, #1974D2 70% );}
+
+.intro-container{ padding-top: 25vh; }
+
+.intro-one, .intro-two{
+  font-family: Mynerve;
+  color: #fff;
+  padding-bottom: 2vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.intro-one{ font-size: 48px; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.intro-two{ font-size: 24px;  }
 
-.App-header {
-  background-color: #282c34;
+.barrier{ margin: 3vh 0; }
+
+.home-card{ margin-top: 4vh;}
+
+#section1, #section2, #section4{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+/* About Section */
+
+.about{ 
+  margin: 10vh 0 0 4vw;}
+
+.about p { margin-left: 2vw;}
+
+.about ul{ margin-left: 5vw;}
+
+.about ul li{ color: #fff; }
+
+.about-intro, .about-statement, .about-statement span{
+  color: #fff;
+  font-family: Tilt Neon;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.about-intro{ font-size: 48px; }
+
+.about-statement{ font-size: 24px;}
+
+.about-statement span{ color: #FDBD01; }
