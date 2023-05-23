@@ -21,7 +21,7 @@ export default function PortfolioCard() {
                         <SiTailwindcss className='mx-auto card-icons tailwind-icon' />
                     </div>
                   </div>
-                 <h5 className='text-center'><a href="#">Github</a></h5>
+                 <h5 className='text-center'><a href="https://github.com/Knight-4000/dino/tree/main/public">Github</a></h5>
               </div>
           </div>
       </div>

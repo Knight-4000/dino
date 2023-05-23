@@ -20,7 +20,7 @@ export default function TurboCityCard() {
                         <BsFillBootstrapFill className='mx-auto card-icons bootstrap-icon' />
                     </div>
                   </div>
-                 <h5 className='text-center'><a href="#">Github</a></h5>
+                 <h5 className='text-center'><a href="https://github.com/Knight-4000/turbo-city">Github</a></h5>
               </div>
           </div>
       </div> 

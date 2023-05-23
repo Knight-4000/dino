@@ -7,7 +7,7 @@ import PortfolioCard from './components/PortfolioCard';
 import About from './components/About';
 import RescueCard from './components/RescueCard';
 import TurboCityCard from './components/TurboCityCard';
-import PetagramCard from './components/PetagramCard';
+import CarMarketCard from './components/CarMarketCard';
 
 function App() {
   const intro1 = "Hello, I'm Bill G."
@@ -72,8 +72,15 @@ function App() {
                 </Fade>
                 </div>
               </div>
-              <div className="home-card mx-auto ">
+              <div className="home-card container mx-auto ">
                 <div className="flex justify-center">
+                <Fade duration={3000}>
+                  <CarMarketCard />
+                </Fade>
+              </div>
+            </div>
+            <div className="home-card mx-auto ">
+              <div className="flex justify-center">
                 <Fade duration={3000}>
                   <RescueCard />
                 </Fade>
@@ -90,13 +97,6 @@ function App() {
                 <div className="flex justify-center">
                 <Fade duration={3000}>
                   <TurboCityCard />
-                </Fade>
-              </div>
-            </div>
-            <div className="home-card container mx-auto ">
-                <div className="flex justify-center">
-                <Fade duration={3000}>
-                  <PetagramCard />
                 </Fade>
               </div>
             </div>
