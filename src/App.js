@@ -1,14 +1,13 @@
 import './App.css';
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
-import Nav from "./Nav";
+import Nav from "./components/Nav";
 import AmberCard from './components/AmberCard';
 import PortfolioCard from './components/PortfolioCard';
 import About from './components/About';
 import RescueCard from './components/RescueCard';
 import TurboCityCard from './components/TurboCityCard';
 import PetagramCard from './components/PetagramCard';
-import Contact from './components/Contact';
 
 function App() {
   const intro1 = "Hello, I'm Bill G."
