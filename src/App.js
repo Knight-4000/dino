@@ -66,7 +66,6 @@ function App() {
                 </Fade>
               </div>
             </div>
-
             <div className="home-card mx-auto ">
               <div id="section3" className="flex justify-center">
                 <Fade duration={3000}>
