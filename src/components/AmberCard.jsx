@@ -8,7 +8,7 @@ export default function AmberCard() {
   return (
     <>
     <div className="flex justify-center">
-        <div className="block max-w-sm rounded-lg bg-white">
+        <div className="block max-w-sm rounded-lg">
             <video width="750" height="500" controls >
                 <source src={video} type="video/mp4"/>
             </video>
