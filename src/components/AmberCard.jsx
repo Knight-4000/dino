@@ -8,8 +8,8 @@ export default function AmberCard() {
   return (
     <>
     <div className="flex justify-center">
-        <div className="block max-w-sm rounded-lg">
-            <video width="750" height="500" controls >
+        <div className="block max-w-sm rounded-lg bg-white">
+            <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/Green-Amber.png?alt=media&token=dec4617f-34eb-44a6-89a4-406e09a60112" controls >
                 <source src={video} type="video/mp4"/>
             </video>
             <div className="p-6">
