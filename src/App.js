@@ -1,15 +1,14 @@
 import './App.css';
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
-import About from './components/About';
-import PortfolioCard from './components/PortfolioCard';
+import Nav from "./Nav";
 import AmberCard from './components/AmberCard';
+import PortfolioCard from './components/PortfolioCard';
+import About from './components/About';
 import RescueCard from './components/RescueCard';
 import TurboCityCard from './components/TurboCityCard';
 import PetagramCard from './components/PetagramCard';
 import Contact from './components/Contact';
-import Nav from './components/Nav';
-
 
 function App() {
   const intro1 = "Hello, I'm Bill G."
@@ -23,6 +22,7 @@ function App() {
       transition: {
         delay: 0.5,
         staggerChildren: 0.06,
+        // Affects speed more than delay
       },
     },
   }
@@ -34,11 +34,13 @@ function App() {
       y: 0,
     },
   }
-  
+
+  // Ending of animating intro
+
   return (
     <div className="App">
       <Nav />
-      <div id="section1" className='intro-container'>
+        <div id="section1" className='intro-container'>
           <motion.h3 className='text-center' variants={sentence} initial="hidden" animate="visible">
             {intro1.split("").map((char, index) => {
                 return (
@@ -64,6 +66,7 @@ function App() {
                 </Fade>
               </div>
             </div>
+
             <div className="home-card mx-auto ">
               <div id="section3" className="flex justify-center">
                 <Fade duration={3000}>
@@ -99,10 +102,7 @@ function App() {
                 </Fade>
               </div>
             </div>
-            <div id='section4'>
-              <Contact />
-            </div>
-          </div>
+           </div>
   );
 }
 
