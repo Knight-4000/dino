@@ -8,7 +8,7 @@ export default function TurboCityCard() {
     <>
      <div className="flex justify-center">
         <div className="block max-w-sm rounded-lg bg-white">
-          <video width="750" height="500" controls >
+          <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/TurboCity.png?alt=media&token=141625a0-8927-4437-91d1-02993759d34d" controls >
             <source src={video} type="video/mp4"/>
           </video>
             <div className="p-6">

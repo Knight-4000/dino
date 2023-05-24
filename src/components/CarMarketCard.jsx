@@ -8,7 +8,7 @@ export default function CarMarketCard() {
     <>
      <div className="flex justify-center">
         <div className="block max-w-sm rounded-lg bg-white">
-        <video width="750" height="500" controls >
+        <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/car-market-f4481.appspot.com/o/Car-Market-Screenshot.png?alt=media&token=7c5ac565-4be3-4a82-b5c4-c088b8a77904" controls >
             <source src={video} type="video/mp4"/>
           </video>
             <div className="p-6">

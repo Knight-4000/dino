@@ -8,7 +8,7 @@ export default function RescueCard() {
     <>
      <div className="flex justify-center">
         <div className="block max-w-sm rounded-lg bg-white">
-          <video width="750" height="500" controls >
+          <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/rescue.png?alt=media&token=71be7c08-8748-4b52-a6b1-2d59fd899b9b" controls >
               <source src={video} type="video/mp4"/>
             </video>
             <div className="p-6">
