@@ -43,7 +43,7 @@ export default function Nav() {
           </Link>
           <Link
             activeClass="active"
-            to="http://localhost:3000"
+            to="https://rails-contact.herokuapp.com"
             spy={true}
             smooth={true}
             offset={-100}
