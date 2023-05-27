@@ -41,16 +41,9 @@ export default function Nav() {
           >
            <BsGear className='mx-auto icon' />
           </Link>
-          <Link
-            activeClass="active"
-            to="https://rails-contact.herokuapp.com"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-           <BiEnvelope className='mx-auto icon' />
-          </Link>
+            <a href="https://rails-contact.herokuapp.com">
+             <BiEnvelope className='mx-auto icon' />
+            </a>
           </div>
         </div>
       </nav>
