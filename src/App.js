@@ -100,6 +100,11 @@ function App() {
                 </Fade>
               </div>
             </div>
+            <div className="home-card container mx-auto ">
+                <div className="flex justify-center">
+                <a href="https://www.caranddriver.com/reviews/a15106129/2016-chevrolet-camaro-ss-automatic-test-review/">Link</a>
+              </div>
+            </div>
            </div>
   );
 }
