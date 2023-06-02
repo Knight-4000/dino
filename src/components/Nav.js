@@ -12,6 +12,7 @@ export default function Nav() {
         <div className='row outer'>
           <div class="container m-auto grid grid-cols-4 inner">
           <Link
+            cursor="pointer"
             activeClass="active"
             to="section1"
             spy={true}
@@ -22,6 +23,7 @@ export default function Nav() {
            <AiOutlineHome className='mx-auto icon' />
           </Link>
           <Link
+            cursor="pointer"
             activeClass="active"
             to="section2"
             spy={true}
@@ -32,6 +34,7 @@ export default function Nav() {
            <HiOutlineInformationCircle className='mx-auto icon' />
           </Link>
             <Link
+            cursor="pointer"
             activeClass="active"
             to="section3"
             spy={true}
