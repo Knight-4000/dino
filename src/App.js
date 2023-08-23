@@ -2,12 +2,16 @@ import './App.css';
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
 import Nav from "./components/Nav";
-import AmberCard from './components/AmberCard';
-import PortfolioCard from './components/PortfolioCard';
 import About from './components/About';
-import RescueCard from './components/RescueCard';
-import TurboCityCard from './components/TurboCityCard';
-import CarMarketCard from './components/CarMarketCard';
+import RowWrapper from './components/RowWrapper';
+import video1 from "./components/Car-Market.mov"
+import video2 from "./components/Rescue.mov"
+import video3 from "./components/Green-Amber.mov"
+import video4 from "./components/TurboCity.mov"
+import RowCard from './components/RowCard';
+import { SiReact, SiRubyonrails, SiTailwindcss } from 'react-icons/si';
+import { BsFillBootstrapFill } from 'react-icons/bs';
+import { AiTwotoneLock } from 'react-icons/ai';
 
 function App() {
   const intro1 = "Hello, I'm Bill G."
@@ -68,35 +72,102 @@ function App() {
             <div className="home-card mx-auto ">
               <div id="section3" className="flex justify-center">
                 <Fade duration={3000}>
-                  <PortfolioCard />
+                  <RowWrapper>
+                    <img className="rounded-t-lg"
+                      src="https://firebasestorage.googleapis.com/v0/b/rescue-a2794.appspot.com/o/portfolio-pic.png?alt=media&token=2a21c519-1bc6-436e-a67e-5ba976baa693"
+                      alt="" />
+                    <div className='p-6'>
+                      <h5 className="mb-2 text-xl text-center">Portfolio</h5>
+                      <p className="mb-4 text-center">Single Page App</p>
+                      <RowCard>
+                        <SiReact className='mx-auto card-icons react-icon'/>
+                        <SiTailwindcss className='mx-auto card-icons tailwind-icon' />
+                      </RowCard>
+                      <h5 className='text-center'><a href="https://github.com/Knight-4000/dino">Github</a></h5>
+                    </div>
+                  </RowWrapper>
                 </Fade>
                 </div>
               </div>
               <div className="home-card container mx-auto ">
                 <div className="flex justify-center">
                 <Fade duration={3000}>
-                  <CarMarketCard />
+                  <RowWrapper>
+                    <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/car-market-f4481.appspot.com/o/Car-Market-Screenshot.png?alt=media&token=7c5ac565-4be3-4a82-b5c4-c088b8a77904" controls >
+                      <source src={video1} type="video/mp4"/>
+                    </video>
+                   <div className='p-6'>
+                    <h5 className="mb-2 text-xl text-center">Car-Market</h5>
+                    <p className="mb-4 text-center">Online Car Shopping</p>
+                      <RowCard>
+                        <SiReact className='mx-auto card-icons react-icon'/>
+                        <SiTailwindcss className='mx-auto card-icons tailwind-icon' />
+                      </RowCard>
+                      <h5 className='text-center'><a href="https://github.com/Knight-4000/car-market">Github</a></h5>
+                   </div>
+                  </RowWrapper>
                 </Fade>
               </div>
             </div>
             <div className="home-card mx-auto ">
               <div className="flex justify-center">
                 <Fade duration={3000}>
-                  <RescueCard />
+                <RowWrapper>
+                    <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/rescue.png?alt=media&token=71be7c08-8748-4b52-a6b1-2d59fd899b9b" controls >
+                      <source src={video2} type="video/mp4"/>
+                    </video>
+                   <div className='p-6'>
+                    <h5 className="mb-2 text-xl text-center">Coldwater Rescue</h5>
+                    <p className="mb-4 text-center">Animal Shelter</p>
+                      <RowCard>
+                        <SiReact className='mx-auto card-icons react-icon'/>
+                        <SiTailwindcss className='mx-auto card-icons tailwind-icon' />
+                      </RowCard>
+                      <h5 className='text-center'><a href="https://github.com/Knight-4000/cw-rescue">Github</a></h5>
+                   </div>
+                  </RowWrapper>
                 </Fade>
               </div>
             </div>
               <div className="home-card mx-auto ">
                 <div className="flex justify-center">
                 <Fade duration={3000}>
-                  <AmberCard />
+                  <RowWrapper>
+                      <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/Green-Amber.png?alt=media&token=dec4617f-34eb-44a6-89a4-406e09a60112" controls >
+                        <source src={video3} type="video/mp4"/>
+                      </video>
+                    <div className='p-6'>
+                      <h5 className="mb-2 text-xl text-center">Green Amber</h5>
+                      <p className="mb-4 text-center">E-commerce/Vegan Takeout </p>
+                        <RowCard>
+                          <SiRubyonrails className='mx-auto card-icons rails-icon'/>
+                          <BsFillBootstrapFill className='mx-auto card-icons bootstrap-icon' />
+                        </RowCard>
+                        <div className='flex justify-center'>
+                          <AiTwotoneLock className='card-icons'/>
+                      </div>
+                    </div>
+                    </RowWrapper>
                 </Fade>
               </div>
             </div>
             <div className="home-card container mx-auto ">
                 <div className="flex justify-center">
                 <Fade duration={3000}>
-                  <TurboCityCard />
+                  <RowWrapper>
+                      <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/TurboCity.png?alt=media&token=141625a0-8927-4437-91d1-02993759d34d" controls >
+                        <source src={video4} type="video/mp4"/>
+                      </video>
+                    <div className='p-6'>
+                      <h5 className="mb-2 text-xl text-center">Turbo City</h5>
+                      <p className="mb-4 text-center">Retro 80s Mall</p>
+                        <RowCard>
+                          <SiReact className='mx-auto card-icons react-icon'/>
+                          <BsFillBootstrapFill className='mx-auto card-icons bootstrap-icon' />
+                        </RowCard>
+                        <h5 className='text-center'><a href="https://github.com/Knight-4000/turbo-city">Github</a></h5>
+                    </div>
+                  </RowWrapper>
                 </Fade>
               </div>
             </div>
