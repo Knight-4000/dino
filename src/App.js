@@ -89,6 +89,31 @@ function App() {
                 </Fade>
                 </div>
               </div>
+
+              <div className="home-card container mx-auto">
+                <a href="http://purr-therapy-92f9ec2054c1.herokuapp.com">
+                <div className="flex justify-center">
+                <Fade duration={3000}>
+                  <RowWrapper>
+                    <img lassName="rounded-t-lg" 
+                    src="https://firebasestorage.googleapis.com/v0/b/car-market-86f22.appspot.com/o/purr-therapy.png?alt=media&token=6d499b8d-86d4-4ef2-8cd7-cebedb5aa5a5" 
+                    alt=""/>
+
+                   <div className='p-6'>
+                    <h5 className="mb-2 text-xl text-center">Purr Therapy</h5>
+                    <p className="mb-4 text-center">Feline Therapists</p>
+                      <RowCard>
+                        <SiReact className='mx-auto card-icons react-icon'/>
+                        <SiTailwindcss className='mx-auto card-icons tailwind-icon' />
+                      </RowCard>
+                      <h5 className='text-center'><a href="https://github.com/Knight-4000/purr">Github</a></h5>
+                   </div>
+                  </RowWrapper>
+                </Fade>
+              </div>
+              </a>
+            </div>
+              
               <div className="home-card container mx-auto ">
                 <div className="flex justify-center">
                 <Fade duration={3000}>
