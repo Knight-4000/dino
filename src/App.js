@@ -175,7 +175,7 @@ function App() {
                   </Fade>
                 </div>
               </div>
-              <div className="home-card container mx-auto ">
+              <div className="home-card mx-auto ">
                 <div className="flex justify-center">
                   <Fade duration={3000}>
                     <RowWrapper>
