@@ -62,17 +62,18 @@ function App() {
                 })}
              </motion.h3>
             </div>
-            <div className="home-card mx-auto ">
-              <div id="section2">
-                <Fade duration={3000}>
-                  <About />
-                </Fade>
+            <div className='container'>
+              <div className="home-card mx-auto ">
+                <div id="section2">
+                  <Fade duration={3000}>
+                    <About />
+                  </Fade>
+                </div>
               </div>
-            </div>
-            <div className="home-card mx-auto ">
-              <div id="section3" className="flex justify-center">
-                <Fade duration={3000}>
-                  <RowWrapper>
+              <div className="home-card mx-auto ">
+                <div id="section3" className="flex justify-center">
+                  <Fade duration={3000}>
+                    <RowWrapper>
                     <img className="rounded-t-lg"
                       src="https://firebasestorage.googleapis.com/v0/b/rescue-a2794.appspot.com/o/portfolio-pic.png?alt=media&token=2a21c519-1bc6-436e-a67e-5ba976baa693"
                       alt="" />
@@ -89,8 +90,7 @@ function App() {
                 </Fade>
                 </div>
               </div>
-
-              <div className="home-card container mx-auto">
+              <div className="home-card mx-auto">
                 <a href="http://purr-therapy-92f9ec2054c1.herokuapp.com">
                 <div className="flex justify-center">
                 <Fade duration={3000}>
@@ -113,9 +113,8 @@ function App() {
               </div>
               </a>
             </div>
-              
-              <div className="home-card container mx-auto ">
-                <div className="flex justify-center">
+            <div className="home-card mx-auto ">
+              <div className="flex justify-center">
                 <Fade duration={3000}>
                   <RowWrapper>
                     <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/car-market-f4481.appspot.com/o/Car-Market-Screenshot.png?alt=media&token=7c5ac565-4be3-4a82-b5c4-c088b8a77904" controls >
@@ -154,8 +153,8 @@ function App() {
                 </Fade>
               </div>
             </div>
-              <div className="home-card mx-auto ">
-                <div className="flex justify-center">
+            <div className="home-card mx-auto ">
+              <div className="flex justify-center">
                 <Fade duration={3000}>
                   <RowWrapper>
                       <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/Green-Amber.png?alt=media&token=dec4617f-34eb-44a6-89a4-406e09a60112" controls >
@@ -170,30 +169,31 @@ function App() {
                         </RowCard>
                         <div className='flex justify-center'>
                           <AiTwotoneLock className='card-icons'/>
+                        </div>
                       </div>
-                    </div>
                     </RowWrapper>
-                </Fade>
+                  </Fade>
+                </div>
               </div>
-            </div>
-            <div className="home-card container mx-auto ">
+              <div className="home-card container mx-auto ">
                 <div className="flex justify-center">
-                <Fade duration={3000}>
-                  <RowWrapper>
-                      <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/TurboCity.png?alt=media&token=141625a0-8927-4437-91d1-02993759d34d" controls >
-                        <source src={video4} type="video/mp4"/>
-                      </video>
-                    <div className='p-6'>
-                      <h5 className="mb-2 text-xl text-center">Turbo City</h5>
-                      <p className="mb-4 text-center">Retro 80s Mall</p>
-                        <RowCard>
-                          <SiReact className='mx-auto card-icons react-icon'/>
-                          <BsFillBootstrapFill className='mx-auto card-icons bootstrap-icon' />
-                        </RowCard>
-                        <h5 className='text-center'><a href="https://github.com/Knight-4000/turbo-city">Github</a></h5>
-                    </div>
-                  </RowWrapper>
-                </Fade>
+                  <Fade duration={3000}>
+                    <RowWrapper>
+                        <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/TurboCity.png?alt=media&token=141625a0-8927-4437-91d1-02993759d34d" controls >
+                          <source src={video4} type="video/mp4"/>
+                        </video>
+                      <div className='p-6'>
+                        <h5 className="mb-2 text-xl text-center">Turbo City</h5>
+                        <p className="mb-4 text-center">Retro 80s Mall</p>
+                          <RowCard>
+                            <SiReact className='mx-auto card-icons react-icon'/>
+                            <BsFillBootstrapFill className='mx-auto card-icons bootstrap-icon' />
+                          </RowCard>
+                          <h5 className='text-center'><a href="https://github.com/Knight-4000/turbo-city">Github</a></h5>
+                      </div>
+                    </RowWrapper>
+                  </Fade>
+                </div>
               </div>
             </div>
           </div>
