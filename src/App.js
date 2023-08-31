@@ -4,14 +4,16 @@ import { Fade } from "react-awesome-reveal";
 import Nav from "./components/Nav";
 import About from './components/About';
 import RowWrapper from './components/RowWrapper';
-import video1 from "./components/Car-Market.mov"
-import video2 from "./components/Rescue.mov"
-import video3 from "./components/Green-Amber.mov"
-import video4 from "./components/TurboCity.mov"
+import video1 from "./videos/Car-Market.mov"
+import video2 from "./videos/Rescue.mov"
+import video3 from "./videos/Green-Amber.mov"
+import video4 from "./videos/TurboCity.mov"
 import RowCard from './components/RowCard';
 import { SiReact, SiRubyonrails, SiTailwindcss } from 'react-icons/si';
 import { BsFillBootstrapFill } from 'react-icons/bs';
 import { AiTwotoneLock } from 'react-icons/ai';
+import { Menu } from './components/Navigation/Menu';
+
 
 function App() {
   const intro1 = "Hello, I'm Bill G."
@@ -42,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+      <Menu />
         <div id="section1" className='intro-container'>
           <motion.h3 className='text-center' variants={sentence} initial="hidden" animate="visible">
             {intro1.split("").map((char, index) => {
@@ -61,7 +63,13 @@ function App() {
                   )
                 })}
              </motion.h3>
-            </div>
+             <Fade duration={3000}>
+                <SiReact className='mx-auto card-icons react-icon'/>
+             </Fade>
+             <Fade duration={9000}>
+                <SiRubyonrails className='mx-auto card-icons rails-icon'/>
+
+             </Fade>            </div>
             <div className='container'>
               <div className="home-card mx-auto ">
                 <div id="section2">
