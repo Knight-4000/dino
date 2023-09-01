@@ -8,9 +8,9 @@ import { HiOutlineInformationCircle } from 'react-icons/hi';
 export default function Nav() {
   return (
     <>
-      <nav className="h-16 fixed top-0 inset-x-0">
+      <nav className="h-16 fixed top-0">
         <div className='row outer'>
-          <div class="container m-auto grid grid-cols-4 inner">
+          <div className="container m-auto grid grid-cols-4 inner">
           <Link
             activeClass="active"
             to="section1"

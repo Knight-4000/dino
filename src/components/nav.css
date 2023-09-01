@@ -1,6 +1,7 @@
 nav{
     background-color: transparent;
     z-index: 9999;
+    min-width: 100%;
 }
 
 .outer{

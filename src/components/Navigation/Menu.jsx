@@ -41,6 +41,7 @@ export const Menu = () => {
       <motion.div className="background" variants={sidebar}/>
       <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />
+      
     </motion.nav>
   );
 };

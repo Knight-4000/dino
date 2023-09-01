@@ -1,5 +1,5 @@
 import './App.css';
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
 import Nav from "./components/Nav";
 import About from './components/About';
@@ -40,11 +40,26 @@ function App() {
     },
   }
 
+
   // Ending of animating intro
+
+  const imageAnimate={
+    offscreen:{x:-100, opacity:0},
+    onscreen:{
+    x:0,
+    opacity:1,
+    rotate:[0,10,0],
+    transition: {type:"spring",
+    bounce:0.4,
+    duration:1}
+  }
+
+}
 
   return (
     <div className="App">
-      <Menu />
+      
+      <Nav />
         <div id="section1" className='intro-container'>
           <motion.h3 className='text-center' variants={sentence} initial="hidden" animate="visible">
             {intro1.split("").map((char, index) => {
@@ -73,6 +88,7 @@ function App() {
             <div className='container'>
               <div className="home-card mx-auto ">
                 <div id="section2">
+                  
                   <Fade duration={3000}>
                     <About />
                   </Fade>
@@ -80,8 +96,10 @@ function App() {
               </div>
               <div className="home-card mx-auto ">
                 <div id="section3" className="flex justify-center">
-                  <Fade duration={3000}>
+               
+
                     <RowWrapper>
+
                     <img className="rounded-t-lg"
                       src="https://firebasestorage.googleapis.com/v0/b/rescue-a2794.appspot.com/o/portfolio-pic.png?alt=media&token=2a21c519-1bc6-436e-a67e-5ba976baa693"
                       alt="" />
@@ -94,8 +112,10 @@ function App() {
                       </RowCard>
                       <h5 className='text-center'><a href="https://github.com/Knight-4000/dino">Github</a></h5>
                     </div>
+                    
                   </RowWrapper>
-                </Fade>
+                 
+              
                 </div>
               </div>
               <div className="home-card mx-auto">
@@ -103,6 +123,9 @@ function App() {
                 <div className="flex justify-center">
                 <Fade duration={3000}>
                   <RowWrapper>
+                  <motion.div className="image-container"       
+        variants={imageAnimate}
+      >
                     <img lassName="rounded-t-lg" 
                     src="https://firebasestorage.googleapis.com/v0/b/car-market-86f22.appspot.com/o/purr-therapy.png?alt=media&token=6d499b8d-86d4-4ef2-8cd7-cebedb5aa5a5" 
                     alt=""/>
@@ -116,14 +139,19 @@ function App() {
                       </RowCard>
                       <h5 className='text-center'><a href="https://github.com/Knight-4000/purr">Github</a></h5>
                    </div>
+                   </motion.div>
                   </RowWrapper>
                 </Fade>
               </div>
               </a>
             </div>
-            <div className="home-card mx-auto ">
+            <div className="home-card mx-auto">
               <div className="flex justify-center">
                 <Fade duration={3000}>
+                <motion.div   whileHover={{
+    scale: 1.2,
+    transition: { duration: 1 },
+  }}>
                   <RowWrapper>
                     <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/car-market-f4481.appspot.com/o/Car-Market-Screenshot.png?alt=media&token=7c5ac565-4be3-4a82-b5c4-c088b8a77904" controls >
                       <source src={video1} type="video/mp4"/>
@@ -135,9 +163,11 @@ function App() {
                         <SiReact className='mx-auto card-icons react-icon'/>
                         <SiTailwindcss className='mx-auto card-icons tailwind-icon' />
                       </RowCard>
+                      
                       <h5 className='text-center'><a href="https://github.com/Knight-4000/car-market">Github</a></h5>
                    </div>
                   </RowWrapper>
+                  </motion.div>
                 </Fade>
               </div>
             </div>

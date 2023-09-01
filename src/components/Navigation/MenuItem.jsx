@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from 'react-scroll'
 import { motion } from "framer-motion";
 import { AiOutlineHome } from 'react-icons/ai';
 import { BiEnvelope } from 'react-icons/bi';
@@ -23,14 +24,23 @@ const variants = {
 };
 
 const links = ["Home", "About", "Projects", "Contact"];
-export const MenuItem = ({ i }) => {
+export const MenuItem  = () => {
 
   return (
     <motion.li
       variants={variants}
       className="menu-link"
     >
-      <AiOutlineHome className='icon-placeholder' />
+                <Link
+            activeClass="active"
+            to="section2"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+           <HiOutlineInformationCircle className='mx-auto icon' />
+          </Link>
       <div>Home</div>
     </motion.li>
   );
