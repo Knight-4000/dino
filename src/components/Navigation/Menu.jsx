@@ -1,21 +1,9 @@
-import './menutwo.css';
+import './menu.css';
 import { AnimatePresence, motion, useCycle } from "framer-motion";
+import { Link } from 'react-scroll'
+import { useState } from 'react';
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
 
-
-const links = [
-    { name: "Home", to: "#", id: 1 },
-    { name: "About", to: "#", id: 2 },
-    { name: "Blog", to: "#", id: 3 },
-    { name: "Contact", to: "#", id: 4 }
-  ];
-  
-  const itemVariants = {
-    closed: {
-      opacity: 0
-    },
-    open: { opacity: 1 }
-  };
-  
   const sideVariants = {
     closed: {
       transition: {
@@ -31,10 +19,10 @@ const links = [
     }
   };   
 export default function MenuTwo() {
-    const [open, cycleOpen] = useCycle(false, true);
+  const [open, cycleOpen] = useCycle(false, true);
    
   return (
-    <header>
+    <header className='fixed h-16'>
       <AnimatePresence>
         {open && (
           <motion.aside
@@ -54,22 +42,45 @@ export default function MenuTwo() {
               exit="closed"
               variants={sideVariants}
             >
-              {links.map(({ name, to, id }) => (
-                <motion.a
-                  key={id}
-                  href={to}
-                  whileHover={{ scale: 1.1 }}
-                  variants={itemVariants}
-                >
-                  {name}
-                </motion.a>
-              ))}
+          <Link
+            activeClass="active"
+            to="section1"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={cycleOpen}
+          >
+            Home
+          </Link>
+          <Link
+            activeClass="active"
+            to="section2"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={cycleOpen}
+          >
+           About
+          </Link>
+            <Link
+            activeClass="active"
+            to="section3"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={cycleOpen}
+          >
+           Projects
+          </Link>
             </motion.div>
           </motion.aside>
         )}
       </AnimatePresence>
-      <div className="btn-container">
-        <button onClick={cycleOpen}>{open ? "Close" : "Open"}</button>
+      <div>
+        <button onClick={cycleOpen}>{open ? <AiOutlineArrowLeft /> : <AiOutlineArrowRight />}</button>
       </div>
 
     </header>

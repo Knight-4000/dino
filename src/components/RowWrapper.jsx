@@ -19,6 +19,8 @@ export default function RowWrapper({children}) {
       initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{once:false, amount:0.5}}
+      whileHover={{
+        scale: 1.1, transition: { duration: 1 }, }}
     >
     <div className='flex justify-center shadow'>
         <div className='block max-w-sm rounded-lg bg-white'>{children}</div>

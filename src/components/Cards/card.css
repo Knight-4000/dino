@@ -3,9 +3,10 @@
     display:flex;
 }
 
-.inner{margin: auto;}
+.inner{margin: 0;}
 
 .card-icons{ font-size: 36px; }
+
 
 .rails-icon{color: #cc0000;}
 
