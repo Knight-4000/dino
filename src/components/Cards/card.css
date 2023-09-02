@@ -16,3 +16,8 @@
 .tailwind-icon{color: rgb(37, 150, 190)}
 
 ul.li { list-style-type: circle; }
+
+.shadow{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 12px;
+}

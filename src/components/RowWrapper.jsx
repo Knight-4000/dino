@@ -1,4 +1,4 @@
-import './card.css';
+import '../components/Cards/card.css';
 import { motion } from "framer-motion";
 
 export default function RowWrapper({children}) {
@@ -16,11 +16,11 @@ export default function RowWrapper({children}) {
 }
   return (
     <motion.div variants={imageAnimate}
-    initial={"offscreen"}
-    whileInView={"onscreen"}
-    viewport={{once:false, amount:0.5}}
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{once:false, amount:0.5}}
     >
-    <div className='flex justify-center'>
+    <div className='flex justify-center shadow'>
         <div className='block max-w-sm rounded-lg bg-white'>{children}</div>
     </div>
     </motion.div>

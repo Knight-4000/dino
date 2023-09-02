@@ -1,19 +1,16 @@
 import './App.css';
-import { motion, Variants } from "framer-motion";
-import { Fade } from "react-awesome-reveal";
-import Nav from "./components/Nav";
+import { motion} from "framer-motion";
 import About from './components/About';
 import RowWrapper from './components/RowWrapper';
 import video1 from "./videos/Car-Market.mov"
 import video2 from "./videos/Rescue.mov"
 import video3 from "./videos/Green-Amber.mov"
 import video4 from "./videos/TurboCity.mov"
-import RowCard from './components/RowCard';
+import RowCard from './components/Cards/RowCard';
 import { SiReact, SiRubyonrails, SiTailwindcss } from 'react-icons/si';
 import { BsFillBootstrapFill } from 'react-icons/bs';
 import { AiTwotoneLock } from 'react-icons/ai';
-import { Menu } from './components/Navigation/Menu';
-
+import Menu from './components/Navigation/Menu';
 
 function App() {
   const intro1 = "Hello, I'm Bill G."
@@ -43,23 +40,9 @@ function App() {
 
   // Ending of animating intro
 
-  const imageAnimate={
-    offscreen:{x:-100, opacity:0},
-    onscreen:{
-    x:0,
-    opacity:1,
-    rotate:[0,10,0],
-    transition: {type:"spring",
-    bounce:0.4,
-    duration:1}
-  }
-
-}
-
   return (
     <div className="App">
-      
-      <Nav />
+      <Menu/>
         <div id="section1" className='intro-container'>
           <motion.h3 className='text-center' variants={sentence} initial="hidden" animate="visible">
             {intro1.split("").map((char, index) => {
@@ -78,20 +61,15 @@ function App() {
                   )
                 })}
              </motion.h3>
-             <Fade duration={3000}>
-                <SiReact className='mx-auto card-icons react-icon'/>
-             </Fade>
-             <Fade duration={9000}>
-                <SiRubyonrails className='mx-auto card-icons rails-icon'/>
 
-             </Fade>            </div>
+             </div>
             <div className='container'>
               <div className="home-card mx-auto ">
                 <div id="section2">
                   
-                  <Fade duration={3000}>
+                
                     <About />
-                  </Fade>
+                
                 </div>
               </div>
               <div className="home-card mx-auto ">
@@ -121,37 +99,26 @@ function App() {
               <div className="home-card mx-auto">
                 <a href="http://purr-therapy-92f9ec2054c1.herokuapp.com">
                 <div className="flex justify-center">
-                <Fade duration={3000}>
                   <RowWrapper>
-                  <motion.div className="image-container"       
-        variants={imageAnimate}
-      >
                     <img lassName="rounded-t-lg" 
                     src="https://firebasestorage.googleapis.com/v0/b/car-market-86f22.appspot.com/o/purr-therapy.png?alt=media&token=6d499b8d-86d4-4ef2-8cd7-cebedb5aa5a5" 
                     alt=""/>
-
-                   <div className='p-6'>
-                    <h5 className="mb-2 text-xl text-center">Purr Therapy</h5>
-                    <p className="mb-4 text-center">Feline Therapists</p>
+                    <div className='p-6'>
+                      <h5 className="mb-2 text-xl text-center">Purr Therapy</h5>
+                      <p className="mb-4 text-center">Feline Therapists</p>
                       <RowCard>
                         <SiReact className='mx-auto card-icons react-icon'/>
                         <SiTailwindcss className='mx-auto card-icons tailwind-icon' />
                       </RowCard>
                       <h5 className='text-center'><a href="https://github.com/Knight-4000/purr">Github</a></h5>
                    </div>
-                   </motion.div>
                   </RowWrapper>
-                </Fade>
-              </div>
+                </div>
               </a>
             </div>
             <div className="home-card mx-auto">
               <div className="flex justify-center">
-                <Fade duration={3000}>
-                <motion.div   whileHover={{
-    scale: 1.2,
-    transition: { duration: 1 },
-  }}>
+                
                   <RowWrapper>
                     <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/car-market-f4481.appspot.com/o/Car-Market-Screenshot.png?alt=media&token=7c5ac565-4be3-4a82-b5c4-c088b8a77904" controls >
                       <source src={video1} type="video/mp4"/>
@@ -167,13 +134,12 @@ function App() {
                       <h5 className='text-center'><a href="https://github.com/Knight-4000/car-market">Github</a></h5>
                    </div>
                   </RowWrapper>
-                  </motion.div>
-                </Fade>
+             
               </div>
             </div>
             <div className="home-card mx-auto ">
               <div className="flex justify-center">
-                <Fade duration={3000}>
+           
                 <RowWrapper>
                     <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/rescue.png?alt=media&token=71be7c08-8748-4b52-a6b1-2d59fd899b9b" controls >
                       <source src={video2} type="video/mp4"/>
@@ -188,12 +154,11 @@ function App() {
                       <h5 className='text-center'><a href="https://github.com/Knight-4000/cw-rescue">Github</a></h5>
                    </div>
                   </RowWrapper>
-                </Fade>
+               
               </div>
             </div>
             <div className="home-card mx-auto ">
               <div className="flex justify-center">
-                <Fade duration={3000}>
                   <RowWrapper>
                       <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/Green-Amber.png?alt=media&token=dec4617f-34eb-44a6-89a4-406e09a60112" controls >
                         <source src={video3} type="video/mp4"/>
@@ -210,12 +175,10 @@ function App() {
                         </div>
                       </div>
                     </RowWrapper>
-                  </Fade>
                 </div>
               </div>
               <div className="home-card mx-auto ">
                 <div className="flex justify-center">
-                  <Fade duration={3000}>
                     <RowWrapper>
                         <video width="750" height="500" poster="https://firebasestorage.googleapis.com/v0/b/turbocity-43ae6.appspot.com/o/TurboCity.png?alt=media&token=141625a0-8927-4437-91d1-02993759d34d" controls >
                           <source src={video4} type="video/mp4"/>
@@ -230,7 +193,6 @@ function App() {
                           <h5 className='text-center'><a href="https://github.com/Knight-4000/turbo-city">Github</a></h5>
                       </div>
                     </RowWrapper>
-                  </Fade>
                 </div>
               </div>
             </div>

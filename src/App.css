@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
+body{background-color: #E5E4E2;}
+
 .intro-container{ padding-top: 25vh;}
 .intro-one, .intro-two{
   font-family: Orbitron;
   color: #000;
-  padding-bottom: 2vh;
 }
 
 .intro-one{ font-size: 64px; 
@@ -25,9 +26,14 @@
 
 /* About Section */
 
-.about{ margin: 10vh 0 0 4vw; }
+.about{ 
+  margin: 10vh 0 0 4vw; 
+  padding: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 12px;
+}
 
-.about p { margin-left: 2vw;}
+.about p, .about-intro { margin-left: 2vw;}
 
 .about ul{ margin-left: 5vw;}
 
