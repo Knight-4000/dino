@@ -1,11 +1,11 @@
-import './card.css';
+import './projects.css';
 
 export default function RowCard({children}) {
 
   return (
     
-    <div className='row outer'>
-      <div className="container m-auto grid grid-cols-2 inner">
+    <div className='row'>
+      <div className="grid grid-cols-2">
         {children}
       </div>
     </div>

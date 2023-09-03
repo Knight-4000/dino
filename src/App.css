@@ -31,6 +31,11 @@ body{background-color: #E5E4E2;}
   border-radius: 12px;
 }
 
+.icon-card{
+  max-width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .about p, .about-intro { margin-left: 2vw;}
 
 .about ul{ margin-left: 5vw;}

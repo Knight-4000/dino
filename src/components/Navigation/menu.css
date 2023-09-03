@@ -2,7 +2,6 @@ header {
     display: flex;
   }
 
-
 aside {
     background-color: blue;
     width: 18.75rem;
@@ -20,7 +19,8 @@ aside {
     font-size: 1.75rem;
     font-weight: 600;
     display: block;
-    margin: 20px;
+    margin: 10px;
+    cursor: pointer;
 
   }
 
@@ -32,45 +32,5 @@ aside {
     background-color: #f9fafb;
     border-radius: 12px;
   }
-
-  /* Mobile menu button transformation */
-
-  .lineTop, .lineBottom, .lineMiddle{
-    width: 24px;
-    height: 2px;
-    border-radius: 10px;
-    background: rgb(14, 13, 13);
-    left: 0;
-    right: 0;
-    transform: all 0.4s;
-    transition: all 0.7s;
-    margin: 2px;
-  }
-
-  .lineTop {
-    top: 2.2em;
-
-  }
-
-  .lineMiddle{
-    top: 2.8em;
-  }
-  .lineBottom {
-    top: 3.4em;
-  }
-
-  .lineTop.spin {
-    top: 2.35em;
-    transform: rotate(135deg);
-    background: #000;
-    margin: -2px;
-  }
-
-.lineBottom.spin, .lineMiddle.spin {
-  top: 2.35em;
-  transform: rotate(225deg);
-  background: #000;
-  margin: -2px;
-}
 
   

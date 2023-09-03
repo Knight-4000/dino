@@ -7,7 +7,6 @@
 
 .card-icons{ font-size: 36px; }
 
-
 .rails-icon{color: #cc0000;}
 
 .react-icon{color: #61DBFB;}
@@ -15,6 +14,18 @@
 .bootstrap-icon{color: #7A43B6;}
 
 .tailwind-icon{color: rgb(37, 150, 190)}
+
+.redux-icon{color: #764abc;}
+
+.node-icon{color: #6cc24a;}
+
+.html-icon{color: #e34c26;}
+
+.css-icon{color: #264de4;}
+
+.javascript-icon{color: #F0DB4F; background: #323330;}
+
+.icon-large{font-size: 40px;}
 
 ul.li { list-style-type: circle; }
 

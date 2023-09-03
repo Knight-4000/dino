@@ -1,4 +1,4 @@
-import '../components/Cards/card.css';
+import './projects.css';
 import { motion } from "framer-motion";
 
 export default function RowWrapper({children}) {
@@ -20,11 +20,14 @@ export default function RowWrapper({children}) {
       whileInView={"onscreen"}
       viewport={{once:false, amount:0.5}}
       whileHover={{
-        scale: 1.1, transition: { duration: 1 }, }}
-    >
-    <div className='flex justify-center shadow'>
-        <div className='block max-w-sm rounded-lg bg-white'>{children}</div>
-    </div>
+        scale: 1.1, transition: { duration: 1 }, }} >
+      <div className='flex justify-center'>
+        <div className="home-card mx-auto ">
+          <div className='flex justify-center shadow'>
+              <div className='block max-w-sm first-line:rounded-lg bg-white rounded-xl'>{children}</div>
+          </div>
+        </div>
+      </div>
     </motion.div>
   )
 }
