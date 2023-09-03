@@ -89,7 +89,7 @@ function App() {
                     </div>
                   </div>
                 </OuterWrapper>
-              </div>
+             
               <OuterWrapper >
                 <img className="rounded-t-xl" 
                   src="https://firebasestorage.googleapis.com/v0/b/car-market-86f22.appspot.com/o/purr-therapy.png?alt=media&token=6d499b8d-86d4-4ef2-8cd7-cebedb5aa5a5" 
@@ -180,6 +180,7 @@ function App() {
                     </div>
                   </div>
                 </OuterWrapper>
+                </div>
               </div>
             </div>
           );  
