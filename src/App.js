@@ -71,6 +71,7 @@ function App() {
                 </div>
               </div>
               <div id="section3">
+                <h3 className='recent text-center'>Recent Projects</h3>
                 <OuterWrapper >
                   <img className="rounded-t-xl"
                     src="https://firebasestorage.googleapis.com/v0/b/rescue-a2794.appspot.com/o/portfolio-pic.png?alt=media&token=2a21c519-1bc6-436e-a67e-5ba976baa693"
@@ -88,12 +89,11 @@ function App() {
                       </a>
                     </div>
                   </div>
-                </OuterWrapper>
-             
-              <OuterWrapper >
-                <img className="rounded-t-xl" 
-                  src="https://firebasestorage.googleapis.com/v0/b/car-market-86f22.appspot.com/o/purr-therapy.png?alt=media&token=6d499b8d-86d4-4ef2-8cd7-cebedb5aa5a5" 
-                  alt=""/>
+                </OuterWrapper>    
+                <OuterWrapper >
+                  <img className="rounded-t-xl" 
+                    src="https://firebasestorage.googleapis.com/v0/b/car-market-86f22.appspot.com/o/purr-therapy.png?alt=media&token=6d499b8d-86d4-4ef2-8cd7-cebedb5aa5a5" 
+                    alt=""/>
                   <div className='p-6'>
                     <h5 className="mb-2 text-xl text-center">Purr Therapy</h5>
                     <p className="mb-4 text-center">Feline Therapists</p>
